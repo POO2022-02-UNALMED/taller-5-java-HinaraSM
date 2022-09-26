@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 
 public class Pez extends Animal{
-    private static ArrayList<Pez> listado;
+    private static ArrayList<Pez> listado=new ArrayList<Pez>();
     public static int salmones;
     public static int bacalaos;
     private String colorEscamas;
@@ -38,7 +38,8 @@ public class Pez extends Animal{
     }
 
     public int cantidadPeces() {
-        return listado.size(); 
+        //return totalPez; 
+        return listado.size();
     }
     
     public static ArrayList<Pez> getListado() {
