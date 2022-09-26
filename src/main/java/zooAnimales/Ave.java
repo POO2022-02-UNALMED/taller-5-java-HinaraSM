@@ -9,12 +9,13 @@ public class Ave extends Animal {
     public static int totalAve;
 
     public Ave() {
+        this(null, 0, null, null, null);
     }  
     
-    public Ave(String nombre, int edad, String habitat, String genero,
-            String colorPlumas) {
+    public Ave(String nombre, int edad, String habitat, String genero,String colorPlumas) {
         super(nombre, edad, habitat, genero);
         this.colorPlumas = colorPlumas;
+        totalAve++;
     }
     
     public static Ave crearHalcon(String nombre, int edad, String genero) {
