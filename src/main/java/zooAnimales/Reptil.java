@@ -10,7 +10,6 @@ public class Reptil extends Animal{
     public static int totalReptil;
 
     public Reptil() {
-        this(null, 0, null, null, null, 0);
     }  
     
     public Reptil(String nombre, int edad, String habitat, String genero,
@@ -18,7 +17,6 @@ public class Reptil extends Animal{
         super(nombre, edad, habitat, genero);
         this.colorEscamas = colorEscamas;
         this.largoCola = largoCola;
-        listado.add(this);
     }
 
     public static Reptil crearIguana (String nombre, int edad, String genero) {
